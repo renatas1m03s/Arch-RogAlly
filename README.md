@@ -1,2 +1,1 @@
-# Arch-RogAlly
-Setup Arch with Steam on ASUS Rog Ally Handheld
+This is a personal bunch of files for automate my arch setup - Learning purpose
