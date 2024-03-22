@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -Sy --needed  --noconfirm wireplumber pipewire-alsa pipewire-pulse lib32-pipewire bluez bluez-utils blueman network-manager-applet cronie
+yay -Sy --needed  --noconfirm wireplumber pipewire-alsa pipewire-pulse lib32-pipewire bluez bluez-utils blueman network-manager-applet
 
 yay -S --needed  sddm xorg xorg-xwayland xorg-xlsclients qt5-wayland glfw-wayland plasma plasma-wayland-session
 
@@ -18,10 +18,9 @@ yay -S --needed --noconfirm update-grub pamac-tray-icon-plasma pamac-aur
 
 yay -S --needed  --noconfirm adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji
 
-# sudo mkdir /usr/share/fonts/WindowsFonts
-# sudo cp -rv /mnt/Backup/Documents/LinuxCustomizations/MS-Fonts/* /usr/share/fonts/WindowsFonts/
-# sudo chmod 644 /usr/share/fonts/WindowsFonts/*
-# sudo fc-cache –force
+yay -S --needed --noconfirm qt5-virtualkeyboard
+
+
 
 sudo systemctl enable sddm
 

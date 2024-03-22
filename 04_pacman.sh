@@ -9,7 +9,7 @@
 sudo pacman -Sy --noconfirm --needed base-devel git wget yajl
 cd /tmp && git clone https://aur.archlinux.org/package-query.git && cd package-query/ && makepkg -si && cd /tmp
 
-git clone https://aur.archlinux.org/yay.git && cd yay/ && makepkg -si
+git clone https://aur.archlinux.org/yay.git && cd yay/ && makepkg -si --noconfirm
 
 echo -e '04_pacman executado' > 04_pacman.log
 

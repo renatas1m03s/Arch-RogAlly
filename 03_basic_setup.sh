@@ -41,7 +41,7 @@ echo -e '\nConfigurando o GRUB com thema'
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
 
-sed -i 's/quiet/quiet nvme_load=YES/g' /etc/default/grub
+sed -i 's/quiet/quiet nvme_load=YES amd_pstate=active amd_prefcore=enable iomem=relaxed/g' /etc/default/grub
 sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g' /etc/default/grub
 
 grub-mkconfig -o /boot/grub/grub.cfg
