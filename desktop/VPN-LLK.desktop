@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Lanlink VPN (VM Windows)
+Exec=/home/renata/Scripts/vpn-llk.sh
+Terminal=true
+Icon=virt-manager
+Type=Application
+Categories=GTK;GNOME;Utility
