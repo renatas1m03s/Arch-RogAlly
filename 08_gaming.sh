@@ -1,12 +1,14 @@
 #!/bin/bash
 
-# Driver do controle Xbox/8bitDo
-# cd /tmp && git clone https://github.com/medusalix/xone && cd xone
-# sudo ./install.sh --release
+yay -Sy --noconfirm steam-native-runtime gamescope-plus
 
-# yay -Sy --noconfirm kpat steam-native-runtime protonup-qt retroarch-git emulationstation-de pcsx2-git gamescope
+yay -S --noconfirm gamescope-session-git gamescope-session-steam-git
 
-yay -Sy --noconfirm kpat protonup-qt retroarch-git emulationstation-de 
+yay -S --noconfirm hhd adjustor hhd-ui
+
+yay -S --noconfirm kpat protonup-qt retroarch-git emulationstation-de 
+
+sudo systemctl enable hhd@renata
 
 # sudo setcap 'CAP_SYS_NICE=eip' /usr/bin/gamescope
 
